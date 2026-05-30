@@ -16,7 +16,7 @@ Stack e Motivos
 **Backend - `server/`**
 | Tech | Por quê |
 | --- | --- |
-| **Node.js + Fastify** | Fastify é 2x mais rápido que Express, com suporte nativo a JSON Schema e TS |
+| **Node.js + Express** | Fastify é 2x mais rápido que Express, com suporte nativo a JSON Schema e TS |
 | **TypeScript** | Tipagem no back = contrato claro com o front. Menos `req.body` sem tipo |
 | **Zod** | Validação de schema runtime. Garante que `req.body` tem formato certo antes do controller |
 | **TSX** | Roda TS direto sem build. `tsx watch` reinicia sozinho ao salvar |
