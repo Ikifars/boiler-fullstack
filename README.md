@@ -24,44 +24,6 @@ Backend - `server/`
 | **TSX** | Roda TS direto sem build. `tsx watch` reinicia sozinho ao salvar |
 | **Dotenv + Zod** | Valida variáveis de ambiente na inicialização. Se faltar `PORT`, o app nem sobe |
 
-Estrutura do Projeto
-
-
-boiler/
-├── server/
-│   ├── src/
-│   │   ├── config/
-│   │   │   └── env.ts
-│   │   ├── controllers/
-│   │   │   └── auth.controller.ts
-│   │   ├── middlewares/
-│   │   │   ├── validate.ts
-│   │   │   └── errorHandler.ts
-│   │   ├── routes/
-│   │   │   ├── auth.routes.ts
-│   │   │   └── user.routes.ts
-│   │   ├── schemas/
-│   │   │   └── auth.schema.ts
-│   │   ├── app.ts
-│   │   └── server.ts
-│   ├── .env.example
-│   └── package.json
-│
-├── client/
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── Login.tsx
-│   │   │   └── Dashboard.tsx
-│   │   ├── services/
-│   │   │   └── api.ts
-│   │   ├── App.tsx
-│   │   └── main.tsx
-│   ├── .env.example
-│   └── package.json
-│
-├── .gitignore
-├── package.json
-└── README.md
 
 Como Rodar
 
