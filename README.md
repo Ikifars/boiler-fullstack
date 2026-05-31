@@ -28,39 +28,39 @@ Estrutura do Projeto
 
 
 boiler/
-├── server/                 # API Node + Express
+├── server/
 │   ├── src/
 │   │   ├── config/
-│   │   │   └── env.ts      # Validação de .env com Zod
+│   │   │   └── env.ts
 │   │   ├── controllers/
-│   │   │   └── auth.controller.ts # Lógica de login
+│   │   │   └── auth.controller.ts
 │   │   ├── middlewares/
-│   │   │   ├── validate.ts # Middleware Zod pra validar req.body/query/params
-│   │   │   └── errorHandler.ts # Handler global de erros
+│   │   │   ├── validate.ts
+│   │   │   └── errorHandler.ts
 │   │   ├── routes/
-│   │   │   ├── auth.routes.ts  # Rotas de autenticação
-│   │   │   └── user.routes.ts  # Rotas de usuário
+│   │   │   ├── auth.routes.ts
+│   │   │   └── user.routes.ts
 │   │   ├── schemas/
-│   │   │   └── auth.schema.ts  # Schemas Zod pro auth
-│   │   ├── app.ts          # Config Express + middlewares
-│   │   └── server.ts       # Entrada do servidor
-│   ├── .env.example        # Template de variáveis de ambiente
+│   │   │   └── auth.schema.ts
+│   │   ├── app.ts
+│   │   └── server.ts
+│   ├── .env.example
 │   └── package.json
 │
-├── client/                 # SPA React + Vite
+├── client/
 │   ├── src/
 │   │   ├── pages/
-│   │   │   ├── Login.tsx   # Tela de login
-│   │   │   └── Dashboard.tsx # Rota protegida pós-login
+│   │   │   ├── Login.tsx
+│   │   │   └── Dashboard.tsx
 │   │   ├── services/
-│   │   │   └── api.ts      # Instância do Axios com baseURL
-│   │   ├── App.tsx         # Rotas do React Router + PrivateRoute
-│   │   └── main.tsx        # Entrada do React
-│   ├── .env.example        # Template VITE_API_URL
+│   │   │   └── api.ts
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   ├── .env.example
 │   └── package.json
 │
-├── .gitignore              # Ignora node_modules, dist, .env
-├── package.json            # Scripts com concurrently pra rodar tudo junto
+├── .gitignore
+├── package.json
 └── README.md
 
 Como Rodar
