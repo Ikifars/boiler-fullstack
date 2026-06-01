@@ -138,15 +138,6 @@ Comando	O que faz
 `npm run preview`	Serve o build localmente
 
 
-Troubleshooting
-
-Erro	Causa	Solução
-`ERR_CONNECTION_REFUSED`	Front batendo na porta errada	Confira `VITE_API_URL` no `.env` do front. Back roda na 3333
-`import.meta.env` sublinhado	TS não conhece tipos do Vite	Crie `src/vite-env.d.ts` com `/// <reference types="vite/client" />`
-`process is not defined`	Usando `process.env` no browser	Use `import.meta.env` no front. `process` só existe no Node
-`CORS error`	Back não liberou origin do front	`app.use(cors({ origin: env.CLIENT_URL }))` no Express
-`Cannot find module 'dotenv/config'`	TSX não carregou dotenv	`import 'dotenv/config'` na primeira linha do `env.ts`
-`Invalid environment variables`	Faltou variável no .env	Checa `server/.env.example` e copia tudo pro `server/.env`
 
 
 Feito pra acelerar setup inicial e evitar código repetido em todo projeto novo.
